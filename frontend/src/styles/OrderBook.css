@@ -1,0 +1,75 @@
+/* Order Book Styles */
+.order-book {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 1200px;
+	background-color: #f7f9fc;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+	font-size: 28px; /* Increased font size for the title */
+	color: #2c3e50; /* Slightly darker color for better contrast */
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif; /* Added modern font */
+	font-weight: 700;
+  }
+  
+  .order-table {
+	width: 100%;
+	border-collapse: collapse;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-table th {
+	background-color: #2980b9;
+	color: white;
+	padding: 12px;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase; /* Uppercase letters for header */
+  }
+  
+  .order-table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	font-family: 'Roboto', sans-serif;
+	color: #34495e; /* Darker text for better readability */
+  }
+  
+  .order-table tr:nth-child(even) {
+	background-color: #ecf0f1;
+  }
+  
+  .order-table tr:hover {
+	background-color: #dceefb;
+  }
+  
+  .order-table tr {
+	transition: background-color 0.3s ease;
+  }
+  
+  /* Add rounded corners for table */
+  .order-table {
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.order-book {
+	  padding: 15px;
+	}
+  
+	.order-table th, .order-table td {
+	  padding: 10px;
+	}
+  
+	.title {
+	  font-size: 24px;
+	}
+  }

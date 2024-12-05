@@ -1,0 +1,150 @@
+/* Basic reset and global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f9;
+	color: #333;
+	line-height: 1.6;
+	padding: 20px;
+  }
+  
+  h1, h2 {
+	color: #333;
+  }
+  
+  .app-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  /* Navigation bar styles */
+  nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+  }
+  
+  nav ul li {
+	margin: 0 15px;
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #007bff;
+	transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+	color: #0056b3;
+  }
+  
+  /* Order Table Styles */
+  .order-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-table th, .order-table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  .order-table th {
+	background-color: #007bff;
+	color: white;
+  }
+  
+  .order-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+  }
+  
+  .order-table tr:hover {
+	background-color: #f1f1f1;
+  }
+  
+  /* Order Form Styles */
+  .order-form-container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-form-container h2 {
+	text-align: center;
+	color: #2d3436;
+  }
+  
+  form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  form div {
+	margin-bottom: 15px;
+  }
+  
+  label {
+	font-weight: 600;
+	color: #2f3640;
+  }
+  
+  input {
+	padding: 10px;
+	font-size: 1rem;
+	margin-top: 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
+  
+  button {
+	padding: 12px 24px; /* Adjusted padding for a more balanced, rounded button */
+	background-color: #1abc9c;
+	color: white;
+	border: none;
+	border-radius: 30px; /* Increased border-radius for a more rounded button */
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s ease-in-out;
+  }
+  
+  button:hover {
+	background-color: #16a085;
+	transform: scale(1.05); /* Added a slight scale effect on hover for more interactivity */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.order-table {
+	  font-size: 14px;
+	}
+  
+	.order-form-container {
+	  padding: 15px;
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	nav ul li {
+	  margin: 10px 0;
+	}
+  }

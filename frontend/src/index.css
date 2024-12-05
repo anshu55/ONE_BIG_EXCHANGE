@@ -1,0 +1,113 @@
+/* Global Styling */
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #f4f7fa; /* Light grey background for a soft, neutral feel */
+	color: #2f3640; /* Darker text color for better readability */
+	padding: 20px;
+  }
+  
+  /* Heading Styling */
+  h1 {
+	color: #2d3436; /* Darker color for headings */
+	font-size: 2.8rem;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase; /* Make the heading stand out */
+  }
+  
+  /* Table Styling */
+  table {
+	width: 100%;
+	margin-top: 30px;
+	border: 1px solid #e1e8eb; /* Light border for a subtle boundary */
+	border-radius: 12px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease; /* Smooth hover transition */
+  }
+  
+  /* Header Row */
+  th {
+	background-color: #1abc9c; /* Soft teal background for table headers */
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: 16px;
+	text-align: left;
+	text-transform: uppercase; /* Uppercase for headers */
+	border-right: 1px solid #ddd; /* Subtle dividing lines */
+  }
+  
+  /* Data Rows */
+  td {
+	padding: 14px 16px;
+	text-align: left;
+	font-size: 1rem;
+	border-top: 1px solid #f4f4f4; /* Light border to separate rows */
+  }
+  
+  /* Row Styling for Even Rows */
+  tr:nth-child(even) {
+	background-color: #ecf0f1; /* Light grey for even rows */
+  }
+  
+  /* Hover Effect on Rows */
+  tr:hover {
+	background-color: #f1f8f7; /* Subtle hover effect */
+	transform: scale(1.02); /* Slight zoom effect on hover */
+  }
+  
+  /* Table Container */
+  .table-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+  }
+  
+  /* Make the table responsive on smaller screens */
+  @media (max-width: 768px) {
+	table {
+	  font-size: 14px;
+	}
+  
+	th, td {
+	  padding: 10px;
+	}
+  
+	h1 {
+	  font-size: 2rem; /* Smaller font size for smaller screens */
+	}
+  }
+  
+  /* Loading State Styling */
+  .loading {
+	text-align: center;
+	font-size: 1.5rem;
+	color: #1abc9c; /* Color matching table header */
+	padding: 50px 0;
+  }
+  
+  /* Button Styling (if you add buttons in the future) */
+  button {
+	background-color: #e67e22; /* Warm orange for buttons */
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #d35400; /* Darker orange on hover */
+  }
